@@ -11,10 +11,14 @@ public class NematodeSchool : MonoBehaviour
     
     public int count = 10;
 
+
     // Start is called before the first frame update
     void Awake()
     {
-        // Put your code here
+        for(int i = 0; i < count; i++)
+        {
+            Instantiate(prefab);
+        }
     }
 
     // Update is called once per frame
